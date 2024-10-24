@@ -55,3 +55,23 @@ public class Main
         System.out.println("isSimilar: " + isSimilar);
     }
 }
+
+public boolean cigarParty(int cigars, boolean isWeekend)
+{
+    return (cigars >= 40 && (cigars <= 60 || isWeekend));
+}
+
+public boolean squirrelPlay(int temp, boolean isSummer)
+{
+    return temp >= 60 && (temp <= 90 || (isSummer && temp <= 100));
+}
+
+public boolean love6(int a, int b)
+{
+    return a == 6 || b == 6 || a + b == 6 || Math.abs(a - b) == 6;
+}
+
+public boolean in1To10(int n, boolean outsideMode)
+{
+    return outsideMode ? n <= 1 || n >= 10 : n >= 1 && n <= 10;
+}
